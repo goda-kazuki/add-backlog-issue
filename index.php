@@ -10,26 +10,14 @@ use atomita\BacklogException;
 $apiKey = $_ENV['APIKEY'];
 
 $issueList = [
-//    "【API】テーブル構成変更対応",
-//    "【API】テーブルリレーション作成",
-    "【API】媒体",
-    "【API】成約",
-    "【API】案件(希望条件)",
-    "【API】顧客アクション(顧客履歴)",
-    "【API】ログイン",
-    "【API】各環境準備",
-    "【API】テスト 調整"
 ];
 
 $issuePostResult = [];
 
-// 23786916=[フェーズ1.2] 山内
 $yamauchi = ["parentIssueId" => 23786916, "assigneeId" => "291862"];
 
-// 23717523=[フェーズ1.2 画面　山本]
 $yamamoto = ["parentIssueId" => 23717523, "assigneeId" => "405288"];
 
-// 23838235=【フェーズ1.2】合田
 $goda = ["parentIssueId" => 23838235, "assigneeId" => "184031"];
 
 $config = $yamamoto;
@@ -46,11 +34,11 @@ try {
 //        $issueDeleteResult = issueDelete($backlog, $issueKey);
 //    }
 
-//    // 個別に消したい時
-//    $issueDeleteResult = issueDelete($backlog, "SUMITAS_KOKYAKU-401");
+    // 個別に消したい時
+//    $issueDeleteResult = issueDelete($backlog, "");
 
 
-//    $issueGetResult = issueGet($backlog, "SUMITAS_KOKYAKU-399");
+//    $issueGetResult = issueGet($backlog, "");
 //    var_dump($issueGetResult);
 
 } catch (BacklogException $e) {
