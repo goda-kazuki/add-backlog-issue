@@ -1,0 +1,9 @@
+{
+  "package": {
+    "atomita/backlog-v2": ""
+  },
+  "require": {
+    "atomita/backlog-v2": "^0.0.3",
+    "vlucas/phpdotenv": "^5.4"
+  }
+}
